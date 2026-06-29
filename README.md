@@ -30,4 +30,30 @@ Download the latest `.zip` or `.app` file.
 
 # 🔄 Automatic Updates
 
-The app automatically checks this repository using GitHub Releases:
+The app automatically checks this repository using GitHub Releases
+
+
+If a newer version is available, you will be notified when the app starts.
+
+---
+
+# 🏷 Versioning System
+
+We use semantic versioning:
+
+- v1.0.0 → Initial release
+- v1.0.1 → Bug fixes
+- v1.1.0 → New features
+- v2.0.0 → Major changes
+
+---
+
+# 🛠 How to publish a new version
+
+To release a new version:
+
+1. Build the app using PyInstaller
+2. Zip the `.app` file:
+
+```bash
+zip -r MarkItDownApp.zip dist/MarkItDownApp.app
