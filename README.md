@@ -4,50 +4,62 @@ This repository contains release builds for the MarkItDown Converter desktop app
 
 It does not contain source code.
 
-## What is this?
+---
 
-The MarkItDown Converter is a desktop application that allows you to:
+# 🚀 About the App
 
-- Drag and drop files anywhere in the window
-- Convert files into Markdown format
-- View conversion progress in real time
-- Use a simple desktop interface
-- Receive update notifications automatically
+MarkItDown Converter is a desktop application for converting files into Markdown format using the MarkItDown engine.
 
-## Downloads
+---
 
-Latest versions are available under the Releases section:
+# ✨ Features
+
+- Drag & drop anywhere on the window
+- File selection support
+- Markdown conversion using MarkItDown
+- Real-time progress bar
+- Recent conversion history (last 5 files)
+- GitHub-based update notifications
+
+---
+
+# 🆕 Latest Update (v1.1.0 – History Panel Update)
+
+### ✨ New Features
+- Added Recent Conversions panel
+- Tracks last 5 converted files
+
+### ⚡ Improvements
+- Improved UI responsiveness
+- Better conversion feedback
+- More stable processing
+
+---
+
+# 📦 Downloads
 
 https://github.com/NeedlerCR/MarkItDown-App-Updates/releases
 
-## Auto Update System
+---
 
-The application checks this repository using the GitHub Releases API:
+# 🔄 Auto Update System
 
+Checks:
 https://api.github.com/repos/NeedlerCR/MarkItDown-App-Updates/releases/latest
 
-If a newer version is available, the app will notify you when it starts.
+If a new version exists, users are notified on startup.
 
-## Versioning
+---
+
+# 🏷 Versioning
 
 - v1.0.0 Initial release
-- v1.0.1 Bug fixes
-- v1.1.0 New features
-- v2.0.0 Major updates
+- v1.1.0 History panel update
+- v1.2.0 Future features
+- v2.0.0 Major redesign
 
-## How to publish a release
+---
 
-1. Build the app using PyInstaller
-2. Zip the application:
+# ⚠️ Notes
 
-zip -r MarkItDownApp.zip dist/MarkItDownApp.app
-
-3. Go to GitHub Releases
-4. Create a new release
-5. Set a tag (example: v1.0.1)
-6. Upload the zip file
-7. Publish the release
-
-## Notes
-
-This repository is only used for compiled application releases.
+This repo only stores compiled app releases.
