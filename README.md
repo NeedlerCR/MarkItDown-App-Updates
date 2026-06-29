@@ -1,59 +1,53 @@
-# 📄 MarkItDown App Updates
+# MarkItDown App Updates
 
-This repository contains **release builds only** for the MarkItDown Converter desktop application.
+This repository contains release builds for the MarkItDown Converter desktop application.
 
-It does NOT contain source code.
+It does not contain source code.
 
----
-
-# 🚀 What is this?
+## What is this?
 
 The MarkItDown Converter is a desktop application that allows you to:
 
-- Drag & drop files anywhere in the window
+- Drag and drop files anywhere in the window
 - Convert files into Markdown format
 - View conversion progress in real time
-- Use a simple, clean interface
+- Use a simple desktop interface
 - Receive update notifications automatically
 
----
+## Downloads
 
-# 📦 Downloads
-
-👉 Get the latest version here:
+Latest versions are available under the Releases section:
 
 https://github.com/NeedlerCR/MarkItDown-App-Updates/releases
 
-Download the latest `.zip` or `.app` file.
+## Auto Update System
 
----
+The application checks this repository using the GitHub Releases API:
 
-# 🔄 Automatic Updates
+https://api.github.com/repos/NeedlerCR/MarkItDown-App-Updates/releases/latest
 
-The app automatically checks this repository using GitHub Releases
+If a newer version is available, the app will notify you when it starts.
 
+## Versioning
 
-If a newer version is available, you will be notified when the app starts.
+- v1.0.0 Initial release
+- v1.0.1 Bug fixes
+- v1.1.0 New features
+- v2.0.0 Major updates
 
----
-
-# 🏷 Versioning System
-
-We use semantic versioning:
-
-- v1.0.0 → Initial release
-- v1.0.1 → Bug fixes
-- v1.1.0 → New features
-- v2.0.0 → Major changes
-
----
-
-# 🛠 How to publish a new version
-
-To release a new version:
+## How to publish a release
 
 1. Build the app using PyInstaller
-2. Zip the `.app` file:
+2. Zip the application:
 
-```bash
 zip -r MarkItDownApp.zip dist/MarkItDownApp.app
+
+3. Go to GitHub Releases
+4. Create a new release
+5. Set a tag (example: v1.0.1)
+6. Upload the zip file
+7. Publish the release
+
+## Notes
+
+This repository is only used for compiled application releases.
