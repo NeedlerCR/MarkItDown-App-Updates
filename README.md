@@ -18,7 +18,7 @@ MarkItDown Desktop is a simple macOS application that allows you to convert docu
 2. Locate the latest release version (e.g., `v2026.1.1.1`).
 3. Under **Assets**, download `MarkItDown.app.zip`.
 4. Double-click the downloaded `.zip` file to extract `MarkItDown.app`.
-5. Drag `MarkItDown.app` into your **Applications** folder.
+5. Drag `MarkItDown.app` into your **Applications** folder (or just run it in your downloads folder).
 
 ---
 
