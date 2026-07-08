@@ -12,16 +12,30 @@ A standardized Python workspace for converting various file formats (PDF, Word, 
 
 ---
 
-## 📋 Prerequisites
+## 📥 Downloading the Application
 
-* **macOS / Linux / Windows**
-* **Python 3.12** *(Python 3.14+ is currently unsupported due to upstream binary dependencies like `onnxruntime`)*
-* **Homebrew** *(macOS only)*
+You can obtain the application in two ways depending on how you intend to use it:
 
-### macOS System Dependencies
+### Method 1: Download Pre-built Releases (Recommended for non-developers)
+1. Go to the **[Releases](../../releases)** page of this GitHub repository.
+2. Locate the latest version tag (e.g., `v2026.1.1.1`).
+3. Under **Assets**, download the binary file suited for your operating system:
+   * **macOS:** `markitdown-macos.zip`
+   * **Windows:** `markitdown-windows.exe`
+   * **Linux:** `markitdown-linux`
+4. Unzip (if applicable) and run the executable directly from your terminal or command prompt.
 
-If compiling native C extensions, ensure build tools and OpenSSL are installed:
+### Method 2: Install from Source (Recommended for developers)
+If you wish to modify the code or run it natively using Python:
 
 ```bash
-brew install python@3.12 pkgconf openssl
-export OPENSSL_DIR=$(brew --prefix openssl)
+# 1. Clone the repository
+git clone <your-repository-url>
+cd markitdown-env
+
+# 2. Create and activate a Python 3.12 virtual environment
+python3.12 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install required dependencies
+pip install --upgrade "markitdown[all]"
