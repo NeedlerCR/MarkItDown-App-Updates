@@ -1,65 +1,34 @@
-# MarkItDown App Updates
+---
 
-This repository contains release builds for the MarkItDown Converter desktop application.
+## 📄 Repository `README.md`
 
-It does not contain source code.
+Below is a complete `README.md` file you can place in the root folder of your project repository.
+
+```markdown
+# MarkItDown Converter Environment
+
+A standardized Python workspace for converting various file formats (PDF, Word, Excel, PowerPoint, Audio, Images, HTML, etc.) into clean Markdown text using Microsoft's **MarkItDown** library.
 
 ---
 
-# 🚀 About the App
+## 📌 Features
 
-MarkItDown Converter is a desktop application for converting files into Markdown format using the MarkItDown engine.
-
----
-
-# ✨ Features
-
-- Drag & drop anywhere on the window
-- File selection support
-- Markdown conversion using MarkItDown
-- Real-time progress bar
-- Recent conversion history (last 5 files)
-- GitHub-based update notifications
+* **Multi-Format Conversion:** Convert `.docx`, `.pptx`, `.xlsx`, `.pdf`, `.mp3`, `.jpg`, and web content directly into structured Markdown.
+* **Full Feature Parity:** Equipped with `markitdown[all]`, including Google's `magika` for AI file-type detection, `pdfplumber`, and Azure Document Intelligence support.
+* **Isolated Environment:** Configured to run on Python 3.12 inside a dedicated virtual environment to ensure cross-platform compatibility and binary wheel support.
 
 ---
 
-# 🆕 Latest Update (v1.1.0 – History Panel Update)
+## 📋 Prerequisites
 
-### ✨ New Features
-- Added Recent Conversions panel
-- Tracks last 5 converted files
+* **macOS / Linux / Windows**
+* **Python 3.12** (Python 3.14+ is currently unsupported due to upstream binary dependencies like `onnxruntime`)
+* **Homebrew** *(macOS only)*
 
-### ⚡ Improvements
-- Improved UI responsiveness
-- Better conversion feedback
-- More stable processing
+### macOS System Dependencies
 
----
+If compiling native C extensions, ensure build tools and OpenSSL are installed:
 
-# 📦 Downloads
-
-https://github.com/NeedlerCR/MarkItDown-App-Updates/releases
-
----
-
-# 🔄 Auto Update System
-
-Checks:
-https://api.github.com/repos/NeedlerCR/MarkItDown-App-Updates/releases/latest
-
-If a new version exists, users are notified on startup.
-
----
-
-# 🏷 Versioning
-
-- v1.0.0 Initial release
-- v1.1.0 History panel update
-- v1.2.0 Future features
-- v2.0.0 Major redesign
-
----
-
-# ⚠️ Notes
-
-This repo only stores compiled app releases.
+```bash
+brew install python@3.12 pkgconf openssl
+export OPENSSL_DIR=$(brew --prefix openssl)
