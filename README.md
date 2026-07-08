@@ -1,10 +1,3 @@
----
-
-## 📄 Repository `README.md`
-
-Below is a complete `README.md` file you can place in the root folder of your project repository.
-
-```markdown
 # MarkItDown Converter Environment
 
 A standardized Python workspace for converting various file formats (PDF, Word, Excel, PowerPoint, Audio, Images, HTML, etc.) into clean Markdown text using Microsoft's **MarkItDown** library.
@@ -22,7 +15,7 @@ A standardized Python workspace for converting various file formats (PDF, Word, 
 ## 📋 Prerequisites
 
 * **macOS / Linux / Windows**
-* **Python 3.12** (Python 3.14+ is currently unsupported due to upstream binary dependencies like `onnxruntime`)
+* **Python 3.12** *(Python 3.14+ is currently unsupported due to upstream binary dependencies like `onnxruntime`)*
 * **Homebrew** *(macOS only)*
 
 ### macOS System Dependencies
